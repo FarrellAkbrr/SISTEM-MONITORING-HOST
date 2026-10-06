@@ -1,0 +1,78 @@
+{
+    "lastUpdate": "2026-10-05 19:39:32",
+    "totalHost": 8,
+    "hosts": [
+        {
+            "id": 1,
+            "name": "My Server Gwe",
+            "type": "LOCAL",
+            "address": "192.168.122.201",
+            "status": "online",
+            "response": 27.76,
+            "downtime": "-"
+        },
+        {
+            "id": 2,
+            "name": "Google",
+            "type": "PUBLIC WEB",
+            "address": "google.com",
+            "status": "online",
+            "response": 68.74,
+            "downtime": "-"
+        },
+        {
+            "id": 3,
+            "name": "GitHub",
+            "type": "DEVELOPER PLATFORM",
+            "address": "github.com",
+            "status": "online",
+            "response": 114.53,
+            "downtime": "-"
+        },
+        {
+            "id": 4,
+            "name": "Cloudflare",
+            "type": "NETWORK CLOUD",
+            "address": "cloudflare.com",
+            "status": "online",
+            "response": 53.64,
+            "downtime": "-"
+        },
+        {
+            "id": 5,
+            "name": "Microsoft",
+            "type": "PUBLIC WEB",
+            "address": "microsoft.com",
+            "status": "online",
+            "response": 70.91,
+            "downtime": "-"
+        },
+        {
+            "id": 6,
+            "name": "YouTube",
+            "type": "VIDEO CONTENT",
+            "address": "youtube.com",
+            "status": "online",
+            "response": 63.01,
+            "downtime": "-"
+        },
+        {
+            "id": 7,
+            "name": "Wikipedia",
+            "type": "STUDY PLATFORM",
+            "address": "wikipedia.org",
+            "status": "online",
+            "response": 63.91,
+            "downtime": "-"
+        },
+        {
+            "id": 8,
+            "name": "OpenAI",
+            "type": "AI PLATFORM",
+            "address": "openai.com",
+            "status": "online",
+            "response": 77.05,
+            "downtime": "-"
+        }
+    ]
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Network Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="background-grid"></div>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                N
+            </div>
+
+            <div>
+                <h2>NETWORK MONITOR</h2>
+                <span>Farrel Akbar Deazeva</span>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#" class="active">
+                <span>◉</span>
+                Dashboard
+            </a>
+
+            <a href="#hosts">
+                <span>◌</span>
+                Hosts
+            </a>
+
+            <a href="#analytics">
+                <span>◈</span>
+                Analytics
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="connection-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>Monitoring Active</strong>
+                    <small>Python monitor connected</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    NETWORK / MONITORING
+                </p>
+
+                <h1>
+                    Network Monitoring
+                </h1>
+
+                <p class="subtitle">
+                    Real-time monitoring host
+                </p>
+
+            </div>
+
+
+            <div class="top-right">
+
+                <div class="live">
+                    <span></span>
+                    LIVE
+                </div>
+
+                <div
+                    class="clock"
+                    id="clock">
+                    --:--:--
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span>
+                        TOTAL HOST
+                    </span>
+
+                    <div class="stat-icon">
+                        ◈
+                    </div>
+
+                </div>
+
+                <h2 id="totalHost">
+                    0
+                </h2>
+
+                <p>
+                    Host monitored
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span>
+                        ONLINE
+                    </span>
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                </div>
+
+                <h2 id="onlineHost">
+                    0
+                </h2>
+
+                <p>
+                    Currently operational
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span>
+                        OFFLINE
+                    </span>
+
+                    <div class="stat-icon red">
+                        !
+                    </div>
+
+                </div>
+
+                <h2 id="offlineHost">
+                    0
+                </h2>
+
+                <p>
+                    Requires attention
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-top">
+
+                    <span>
+                        AVG LATENCY
+                    </span>
+
+                    <div class="stat-icon blue">
+                        ↗
+                    </div>
+
+                </div>
+
+                <h2>
+
+                    <span id="avgLatency">
+                        0
+                    </span>
+
+                    <small>
+                        ms
+                    </small>
+
+                </h2>
+
+                <p>
+                    Average response time
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHART -->
+        <section
+            class="panel chart-panel"
+            id="analytics">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <p class="panel-label">
+                        PERFORMANCE
+                    </p>
+
+                    <h2>
+                        Response Time
+                    </h2>
+
+                </div>
+
+                <div class="chart-info">
+                    LIVE DATA
+                </div>
+
+            </div>
+
+
+            <div class="chart-wrapper">
+
+                <canvas
+                    id="latencyChart">
+                </canvas>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOSTS -->
+        <section
+            class="host-section"
+            id="hosts">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="panel-label">
+                        INFRASTRUCTURE
+                    </p>
+
+                    <h2>
+                        Host Monitoring
+                    </h2>
+
+                </div>
+
+                <div class="update">
+
+                    Last update:
+
+                    <strong id="lastUpdate">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="host-grid"
+                id="hostContainer">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
